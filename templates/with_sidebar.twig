@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-4">
+            {% block sidebar %}
+                <h1>Hot news</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, animi at cupiditate doloribus ducimus facere neque quia? Accusantium fuga, odit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, quaerat.</p>
+            {% endblock sidebar %}
+        </div>
+        <div class="col-xs-8">
+            {% block main %}
+            {% endblock main %}
+        </div>
+    </div>
+{% endblock content %}

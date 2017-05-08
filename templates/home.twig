@@ -1,0 +1,21 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <h1>Hi {{ person.name }} !</h1>
+    <p>{{ 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto asperiores autem blanditiis
+        consequuntur doloremque eligendi facere illo illum incidunt ipsam iste itaque labore laborum magnam minima minus
+        modi natus nesciunt quaerat qui quidem, reiciendis repudiandae suscipit temporibus vero voluptas voluptates?
+        Aliquid architecto asperiores at beatae consequatur consequuntur dolor dolore dolorem dolorum eligendi eos
+        explicabo harum itaque iure laborum modi molestias natus non nulla numquam officia placeat quo saepe, sapiente
+        sed tempore velit voluptate. Ad aspernatur assumenda debitis deleniti deserunt dignissimos ducimus eos eveniet
+        harum illum iste laborum laudantium, libero maiores molestiae nostrum odit omnis pariatur perferendis,
+        perspiciatis quaerat quibusdam quod repudiandae similique sit tenetur ullam voluptates! Earum magnam, quia.
+        Error illum incidunt itaque? Ab adipisci, aliquam aperiam autem eaque eveniet facere illum ipsa itaque libero,
+        necessitatibus odit quasi, ratione sapiente sint vero voluptas. Aliquid autem consequatur doloremque eos id ipsa
+        libero mollitia nulla sit veritatis? Quod rem sapiente vel! Ab aliquam aliquid aspernatur atque beatae
+        blanditiis consequuntur cum dignissimos, distinctio dolore eligendi error eum excepturi expedita id, impedit
+        iste laudantium magnam magni maiores maxime minima placeat quaerat quidem quisquam ratione reiciendis
+        reprehenderit repudiandae rerum sapiente sunt tempora temporibus ullam velit veniam voluptatem voluptatum?
+        Aliquid aspernatur perferendis quo totam vel.' | markdown | striptags | truncate(200, true, '...')}}</p>
+        <a href="/?p=presentation">See more</a>
+{% endblock %}

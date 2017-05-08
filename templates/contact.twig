@@ -1,0 +1,20 @@
+{% extends 'layout.twig' %}
+
+{% import 'form.twig' as form %}
+
+{% block content %}
+    <h1>Contact</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam architecto blanditiis commodi
+        consequatur culpa cumque cupiditate delectus distinctio doloremque eaque enim eos esse ex exercitationem fuga
+        id, illum inventore iste iusto laudantium libero maiores nam necessitatibus odio officiis perspiciatis possimus
+        provident quas quo repellat reprehenderit repudiandae sapiente vitae.</p>
+    <form action="?p=contact" method="post">
+        {{ form.input('name', 'Your name', contact.name, {class: 'superclass'}) }}
+        {{ form.input('email', 'Email', contact.email) }}
+        {{ form.textarea('message', 'Message') }}
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+    </form>
+    </form>
+{% endblock %}

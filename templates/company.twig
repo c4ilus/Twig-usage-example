@@ -1,0 +1,21 @@
+{% extends 'with_sidebar.twig' %}
+
+{% block sidebar %}
+    {{ parent() }}
+    <h2>Yep !</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid at dolores eaque hic, illo incidunt iste itaque molestiae qui.</p>
+{% endblock %}
+
+{% block main %}
+    <h1>Company</h1>
+    <p>{{ 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad alias atque cum debitis doloribus eaque eos et harum,
+    laborum molestiae nihil numquam officia optio perspiciatis quidem quod? Animi blanditiis commodi culpa debitis dolorem dolorum,
+    ducimus est harum illo ipsam maxime minus molestias nesciunt, quidem unde ut voluptates voluptatibus. Ab accusantium aliquam aperiam
+    architecto consequatur dignissimos dolorem doloremque dolorum eum, exercitationem iure molestiae perferendis, reiciendis, tempora
+    tenetur veniam voluptatibus? Ad aliquid aperiam assumenda autem deleniti dolores ducimus facere harum impedit, incidunt magni non quo
+    repellendus sed voluptates! Assumenda atque cupiditate, dolore eum laboriosam laudantium, necessitatibus odit quae quam repudiandae
+    sed totam unde. Adipisci at corporis delectus necessitatibus recusandae ullam. A accusamus corporis dolore eaque et exercitationem
+    facere id impedit incidunt laborum, magnam magni minima, mollitia nisi obcaecati officiis provident quibusdam. Aspernatur aut expedita
+    fuga hic minus temporibus voluptatum. Aliquam aut exercitationem id quaerat repellendus, rerum ut. Accusantium ad autem consequuntur debitis dignissimos.' | markdown | striptags }}
+    </p>
+{% endblock %}
