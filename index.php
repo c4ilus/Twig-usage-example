@@ -27,7 +27,7 @@ switch ($page) {
         'title' => 'Home page',
       ),
       'person' => array(
-        'name' => 'Romain'
+        'name' => 'Fake'
       )
     );
     echo $twig->render('home.twig', $values);
@@ -35,8 +35,8 @@ switch ($page) {
   case 'contact':
     $values = array(
       'contact' => array(
-        'name' => 'Romain',
-        'email' => 'moro.romain@gmail.com'
+        'name' => 'Fake',
+        'email' => 'fake@domain.tld'
       )
     );
     echo $twig->render('contact.twig', $values);
